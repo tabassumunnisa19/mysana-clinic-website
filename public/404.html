@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Mysana Clinic</title>
+    <script>
+      // Preserve deep links within the GitHub Pages project path.
+      const base = '/mysana-clinic-website';
+      const path = window.location.pathname;
+      const query = window.location.search;
+      const hash = window.location.hash;
+      sessionStorage.setItem('ghspa-path', path + query + hash);
+      window.location.replace(base + '/');
+    </script>
+  </head>
+  <body>Redirecting to Mysana Clinic…</body>
+</html>
