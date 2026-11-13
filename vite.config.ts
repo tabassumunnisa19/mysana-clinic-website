@@ -4,5 +4,6 @@ import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  base: '/',
+  // GitHub project-site preview URL: https://tabassumunnisa19.github.io/mysana-clinic-website/
+  base: '/mysana-clinic-website/',
 })
