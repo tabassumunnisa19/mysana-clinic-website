@@ -134,7 +134,13 @@ h1 em, h2 em { color: var(--rose); font-weight: 500; }
 .article-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
 .article-card { background: #fff; border: 1px solid #eee8e2; }
 .article-image { height: 190px; position: relative; background-size: cover; background-position: center; }
-.article-image-1 { background-image: linear-gradient(#4a302422,#4a302422),url('https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&w=800&q=80'); }
+.article-image-1 {
+  background-image: url('/mysana-clinic-website/images/pcod-vs-pcos.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #ffffff;
+}
 .article-image-2 { background-image: linear-gradient(#4a302422,#4a302422),url('https://images.unsplash.com/photo-1519689680058-324335c77eba?auto=format&fit=crop&w=800&q=80'); }
 .article-image-3 { background-image: linear-gradient(#4a302422,#4a302422),url('https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=800&q=80'); }
 .article-image span { position: absolute; bottom: 13px; left: 15px; color: white; font-size: 8px; letter-spacing: .17em; font-weight: 700; }
