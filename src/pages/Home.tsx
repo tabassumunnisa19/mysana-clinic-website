@@ -12,7 +12,7 @@ export default function Home() {
       <div className="hero-orb orb-one"/><div className="hero-orb orb-two"/>
       <div className="container hero-grid">
         <motion.div className="hero-copy" initial={{ opacity: 0, x: -24 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: .7 }}>
-          <span className="eyebrow"><span className="eyebrow-dot"/> ADVANCED & PERSONALISED PCOD SPECIALTY <i/> MANGALURU</span>
+          <span className="eyebrow"><span className="eyebrow-dot"/> MANGALURU’S FIRST DEDICATED PCOD CLINIC <i/> ADVANCED & PERSONALISED CARE</span>
           <h1>Personalised care for <em>PCOD & hormonal health.</em></h1>
           <p className="hero-lead">Specialised, personalised support for PCOD, hormonal health and the concerns that matter to you.</p>
           <div className="hero-actions"><Link to="/appointment" className="button button-primary">Request an appointment <ArrowUpRight size={17}/></Link><Link to="/services" className="button button-quiet">Explore our services <ArrowRight size={17}/></Link></div>
@@ -35,7 +35,7 @@ export default function Home() {
     </section>
 
     <section className="services-section section-pad">
-      <div className="container"><div className="section-row"><SectionHeading eyebrow="HOW WE CAN HELP" title="Care for the things that matter." text="Explore women's health topics and consultation areas. Contact the clinic to confirm currently available services."/><Link to="/services" className="button button-outline">View all services <ArrowUpRight size={16}/></Link></div><ServiceGrid limit={4}/></div>
+      <div className="container"><div className="section-row"><SectionHeading eyebrow="HOW WE CAN HELP" title="Care for the things that matter." text="Explore women's health topics and consultation areas. Contact the clinic to confirm currently available services."/><Link to="/services" className="button button-outline">View all services <ArrowUpRight size={16}/></Link></div><ServiceGrid limit={4}/><div className="service-marquee" aria-label="SANA CLINIC services"><div className="service-marquee-track">{[...['PCOD & Hormonal Health', 'Menstrual Health', 'Fertility & Preconception', 'Menopause & Midlife Wellness', 'Community Women’s Health', 'Adolescent Gynaecology', 'General Gynaecology', 'Pregnancy & Antenatal Care'], ...['PCOD & Hormonal Health', 'Menstrual Health', 'Fertility & Preconception', 'Menopause & Midlife Wellness', 'Community Women’s Health', 'Adolescent Gynaecology', 'General Gynaecology', 'Pregnancy & Antenatal Care']].map((name, index) => <span key={`${name}-${index}`}>{name}<b aria-hidden="true">✳</b></span>)}</div></div></div>
     </section>
 
     <section className="journey-section section-pad">
@@ -59,7 +59,7 @@ export default function Home() {
         <div className="pcod-building"><img src={`${import.meta.env.BASE_URL}images/comfort-inn-building.webp`} alt="Comfort Inn Complex, Deralakatte"/></div>
         <div className="pcod-location-copy">
           <span className="eyebrow">ADVANCED & PERSONALISED PCOD SPECIALTY</span>
-          <h2>1st PCOD Clinic in <em>Mangalore</em></h2>
+          <h2>Mangaluru’s <em>First Dedicated PCOD Clinic</em></h2>
           <p>Visit SANA CLINIC at Comfort Inn Complex, opposite K.S. Hegde Medical College & Hospital, Deralakatte.</p>
           <a className="text-link" href={siteConfig.googleMapsUrl} target="_blank" rel="noreferrer">Get directions & view location <ArrowUpRight size={17}/></a>
           <p className="pcod-address">{siteConfig.address}</p>
